@@ -1,0 +1,151 @@
+:root {
+  --primary: #d3d4d9ff;
+  --secondary: #4b88a2ff;
+  --red: #bb0a21ff;
+  --black: #252627ff;
+  --white: #fff9fbff;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  place-items: center;
+}
+
+header {
+  color: var(--white);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black);
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+#menu::before {
+  content: "≡";
+  color: var(--white);
+  font-size: 2rem;
+}
+
+#menu.show::before {
+    content: "✕";
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--secondary);
+  margin-top: 0;
+}
+
+.nav li {
+  display: none;
+}
+
+.show li {
+    display: block;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+nav ul li:hover {
+  background-color: var(--black);
+}
+
+nav a {
+  color:   var(--white);
+}
+
+h1 {
+  padding: 0.5rem;
+}
+
+section {
+  margin: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 7px;
+}
+
+section h2 {
+  background-color: var(--red);
+  padding: 0.1rem 0;
+  text-align: center;
+  color: var(--white);
+  border-radius: 7px 0;
+}
+
+section p {
+  padding: 0.5rem;
+  text-align: justify;
+  color: var(--black);
+}
+
+section img {
+  width: 10rem;
+  border-radius: 19px;
+  box-shadow: 0 0 30px rgb(27, 9, 9);
+  border: 4px solid var(--secondary);
+}
+
+.student-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--white);
+}
+
+.date {
+  background-color: var(--black);
+  padding: 1rem;
+}
+
+.social-icon {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.social-icon a:hover {
+  color: var(--red);
+}
+
+
+

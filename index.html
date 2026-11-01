@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet">
@@ -37,29 +37,36 @@
     <main>
         <h1>Home</h1>
         <div class="container">
-        <section>
-            <div>
-                <h2>About</h2>
-                <p>My transition into web development and software engineering stems from a genuine curiosity about how elegant user experiences are designed, structured, and brought to life through code.</p>
-                <p>Through rigorous coursework at Brigham Young University-Idaho (BYU-Idaho), I have developed a deep foundation across both front-end web development (HTML, CSS, JavaScript) and backend algorithmic logic (Python, function modularity, and automated unit testing).</p>
-                <p>For me, writing code is about more than making things look good on screen—it's about crafting maintainable, accessible, and high-performance solutions that solve practical problems.</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Student Photo</h2>
-            </div>
-            <div class="student-img">
-                <img src="images/george-portrait.webp" alt="A portrait of george ekpo">
-            </div>
-        </section>
+            <section>
+                <div>
+                    <h2>About</h2>
+                    <p>My name is George Asukwo Ekpo from Akwa Ibom State, Nigeria. I have always been enthusiastic on developing my own website but honestly it turns out there is more work to it than i anticipated for, overall the learning process is worth it.</p>
+                    <p>I am currently enrolled in Brigham Young University-Idaho (BYU-Idaho), I have learnt the deep basics across front-end web development (HTML, CSS, JavaScript).</p>
+                    <p>In 2024 i started learning web development on <a href="earn.angelhack.com" target="_blank">Angelhack.com</a> although i gave up for some reasons and today that basic ideas has helped me hugely to learning fast.</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Student Photo</h2>
+                </div>
+                <div class="student-img">
+                    <img src="images/george-portrait.webp" alt="A portrait of george ekpo">
+                </div>
+            </section>
         </div>
         <section>
-            <div>
-                <h2>Web Certificate Courses</h2>
-                <div class="course">
+                <h2>Web and Computer Programming</h2>
+
+                <nav>
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </nav>
+                <div class="coursecontainer">
+                    <div id="lisOfCourses"></div>
                 </div>
-            </div>
+
+                <p id="showCredits"></p>
         </section>
     </main>
     <footer>
@@ -75,7 +82,7 @@
             </svg></a>
         </div>
         <div class="date">
-            <p>©<span id="currentyear"></span> 🌸 George Ekpo 🌸 Nigeria</p>
+            <p>©<span id="currentYear"></span> 🌸 George Ekpo 🌸 Nigeria</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>

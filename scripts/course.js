@@ -78,10 +78,56 @@ const courses = [
     }
 ]
 
-function createCourseCard(filteredCourses) {
-    const container = document.querySelector(".course");
-    if (!container) return;
-    filteredCourses.foreach(courses => {
-        let 
-    })
+const subjectList = document.querySelector("#lisOfCourses");
+const totalCredits = document.querySelector("#showCredits");
+
+function createCourseCards(filteredCourses) {
+    subjectList.innerHTML = "";
+
+    filteredCourses.forEach(course => {
+        const card = document.createElement("h3");
+        card.classList.add("card-list");
+        card.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed) {
+            card.classList.add("finished");
+        }
+
+        subjectList.appendChild(card);
+    });
+
+    const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    totalCredits.textContent = `The total credits for course listed above is ${total}`;
 }
+
+createCourseCards(courses);
+
+const allActive = document.querySelector("#all");
+const allCse  = document.getElementById("cse");
+const allWdd = document.querySelector("#wdd");
+
+allActive.addEventListener("click", () => {
+    allActive.classList.add("active");
+    allCse.classList.remove("active");
+    allWdd.classList.remove("active");
+    createCourseCards(courses);
+});
+
+allCse.addEventListener("click", () => {
+    allCse.classList.add("active");
+    allActive.classList.remove("active");
+    allWdd.classList.remove("active");
+    createCourseCards(courses.filter(course => course.subject === "CSE"));
+});
+
+allWdd.addEventListener("click", () => {
+    allWdd.classList.add("active");
+    allActive.classList.remove("active");
+    allCse.classList.remove("active");
+    createCourseCards(courses.filter(course => course.subject === "WDD"));
+});
+
+allActive.classList.add("active")
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;

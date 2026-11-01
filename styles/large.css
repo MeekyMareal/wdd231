@@ -1,7 +1,35 @@
+@media (min-width: 320px) {
+
+    section #lisOfCourses {
+        display: grid;  
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    
+}
+
 @media (min-width: 620px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    nav .nav li {
+        display: block;
+        border-radius: 15px;
+    }
+
+    #menu {
+        display: none;
+    }
     .container {
         display: grid;
         grid-template-columns: 2fr 1fr;
 
+    }
+
+    section #lisOfCourses {
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);  
     }
 }

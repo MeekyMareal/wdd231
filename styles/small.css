@@ -37,6 +37,10 @@ header {
   justify-content: space-between;
 }
 
+.main-header svg {
+  padding-right: 5px;
+}
+
 #menu::before {
   content: "≡";
   color: var(--white);
@@ -51,7 +55,7 @@ header a {
   text-decoration: none;
 }
 
-nav {
+header nav {
   background-color: var(--secondary);
   margin-top: 0;
 }
@@ -69,15 +73,15 @@ ul {
   list-style-type: none;
 }
 
-nav ul li {
+header nav ul li {
   padding: 0.5rem;
 }
 
-nav ul li:hover {
+header nav ul li:hover {
   background-color: var(--black);
 }
 
-nav a {
+header nav a {
   color:   var(--white);
 }
 
@@ -99,6 +103,10 @@ section h2 {
   border-radius: 7px 0;
 }
 
+.container {
+  min-height: 15rem;
+}
+
 section p {
   padding: 0.5rem;
   text-align: justify;
@@ -116,6 +124,56 @@ section img {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+}
+
+section nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+}
+
+section nav button {
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+
+section nav button:hover {
+  background-color: var(--secondary);
+  color: var(--black);
+  padding: 0.6rem 3rem;
+}
+
+section nav button.active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
+#lisOfCourses {
+  display: grid;  
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  margin: 1rem;
+  gap: 1rem;
+  text-align: center;  
+}
+
+.card-list {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 15px;
+
+}
+
+.card-list.finished {
+  background-color: var(--red);
+}
+
+#showCredits {
+  text-align: center;
 }
 
 footer {

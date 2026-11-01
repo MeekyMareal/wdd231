@@ -32,9 +32,12 @@ header {
 .main-header {
   display: flex;
   flex-direction: row;
-  background-color: var(--black);
+  background-color: var(--primary);
   padding: 1rem;
   justify-content: space-between;
+  color: var(--black);
+  font-size: larger;
+  font-weight: 700;
 }
 
 .main-header svg {
@@ -56,7 +59,7 @@ header a {
 }
 
 header nav {
-  background-color: var(--secondary);
+  background-color: var(--black);
   margin-top: 0;
 }
 
@@ -78,7 +81,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-  background-color: var(--black);
+  background-color: var(--secondary);
 }
 
 header nav a {

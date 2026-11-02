@@ -46,7 +46,7 @@ header {
 
 #menu::before {
   content: "≡";
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
 }
 

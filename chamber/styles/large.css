@@ -1,0 +1,31 @@
+@media (max-width: 320px) {
+
+    #members.list-view .members-details {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (min-width: 620px) {
+    .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    nav .nav li {
+        display: block;
+        border-radius: 15px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-self: center;
+    }
+}

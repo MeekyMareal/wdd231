@@ -6,8 +6,7 @@
     "website": "https://www.delwitengineering.com",
     "image": "images/delwit.webp",
     "level": "gold",
-    "category": "Engineering & Web Services",
-    "work_hours": "Mon-Fri: 08:30 - 17:00"
+    "category": "Engineering & Web Services"
   },
   {
     "company": "Carlcare Service Center Benin",
@@ -16,8 +15,7 @@
     "website": "https://www.carlcare.com",
     "image": "images/carlcare.webp",
     "level": "silver",
-    "category": "Electronics Repair & Mobile Support",
-    "work_hours": "Mon-Sat: 09:00 - 17:30"
+    "category": "Electronics Repair & Mobile Support"
   },
   {
     "company": "Berger Paints Benin Depot",
@@ -26,8 +24,7 @@
     "website": "https://www.bergerpaintsnig.com",
     "image": "images/berger.webp",
     "level": "silver",
-    "category": "Manufacturing & Building Supplies",
-    "work_hours": "Mon-Fri: 08:00 - 16:30"
+    "category": "Manufacturing & Building Supplies"
   },
   {
     "company": "Community Research & Development Centre (CREDC)",
@@ -36,8 +33,7 @@
     "website": "https://www.credcng.org",
     "image": "images/credcent.webp",
     "level": "member",
-    "category": "Non-Governmental & Renewable Energy Research",
-    "work_hours": "Mon-Fri: 08:00 - 17:00"
+    "category": "Non-Governmental & Renewable Energy Research"
   },
   {
     "company": "Flashlearners",
@@ -46,8 +42,7 @@
     "website": "https://www.flashlearners.com",
     "image": "images/flashlearners.webp",
     "level": "gold",
-    "category": "Educational Technology & E-Learning",
-    "work_hours": "Mon-Sat: 08:00 - 18:00"
+    "category": "Educational Technology & E-Learning"
   },
   {
     "company": "Gilgal Dental Clinic",
@@ -56,8 +51,7 @@
     "website": "https://www.gilgaldental.com",
     "image": "images/gilgal.webp",
     "level": "silver",
-    "category": "Healthcare & Dental Care",
-    "work_hours": "Mon-Sat: 08:00 - 18:00"
+    "category": "Healthcare & Dental Care"
   },
   {
     "company": "Okomu Oil Palm PLC",
@@ -66,8 +60,7 @@
     "website": "https://www.okomu.com",
     "image": "images/okomu.webp",
     "level": "gold",
-    "category": "Agriculture & Agro-Allied Production",
-    "work_hours": "Mon-Fri: 08:00 - 17:00"
+    "category": "Agriculture & Agro-Allied Production"
   },
   {
     "company": "Ami's Beading N' Makeovers",
@@ -76,8 +69,7 @@
     "website": "https://www.amisbeadingmakeovers.ng",
     "image": "images/ami.webp",
     "level": "member",
-    "category": "Beauty & Fashion Services",
-    "work_hours": "Mon-Sat: 09:00 - 19:00"
+    "category": "Beauty & Fashion Services"
   },
   {
     "company": "Presco PLC",
@@ -86,7 +78,6 @@
     "website": "https://www.presco-plc.com",
     "image": "images/presco.webp",
     "level": "gold",
-    "category": "Agriculture & Agro-Allied Industrial Production",
-    "work_hours": "Mon-Fri: 08:00 - 17:00"
+    "category": "Agriculture & Agro-Allied Industrial Production"
   }
 ]

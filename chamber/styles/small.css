@@ -115,6 +115,7 @@ h1 {
     gap: 10px;
     font-size: 0.5rem;
     max-width: 840px;
+    margin: 0 auto;
 }
 
 #members.grid-view .members-details {

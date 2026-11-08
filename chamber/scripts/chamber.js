@@ -32,7 +32,7 @@ function displayMembers(membersCard) {
                     <p class="tag"><strong>Category:</strong> ${membersDetails.category}</p>
                 </div>
                 <div>
-                    <img src="${membersDetails.image}" width="100" height="90" alt="Members Company Logo" loading="lazy">
+                    <img src="${membersDetails.image}" width="100" height="85" alt="Members Company Logo" loading="lazy">
                     <p><strong>Phone:</strong> ${membersDetails.phone}</p>
                     <p><a href="${membersDetails.website}" target="_blank">Website</a></p>
                     <p><strong>Level:</strong> ${membersDetails.level}</p>

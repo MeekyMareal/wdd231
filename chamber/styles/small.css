@@ -151,12 +151,7 @@ h1 {
 }
 
 #members.grid-view img {
-    float: left;
-    margin-right: 6px;
-}
-
-#members.grid-view .tag {
-    border-bottom: 2px solid var(--black);
+    margin: 0 50px;
 }
 
 #members.list-view .members-details:nth-child(odd) {

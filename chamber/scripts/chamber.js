@@ -28,11 +28,11 @@ function displayMembers(membersCard) {
         container.innerHTML += `
             <div class="members-details">
                 <div>
+                    <img src="${membersDetails.image}" width="100" height="85" alt="Members Company Logo" loading="lazy">
                     <h2>${membersDetails.company}</h2>
                     <p class="tag"><strong>Category:</strong> ${membersDetails.category}</p>
                 </div>
                 <div>
-                    <img src="${membersDetails.image}" width="100" height="85" alt="Members Company Logo" loading="lazy">
                     <p><strong>Phone:</strong> ${membersDetails.phone}</p>
                     <p><a href="${membersDetails.website}" target="_blank">Website</a></p>
                     <p><strong>Level:</strong> ${membersDetails.level}</p>

@@ -140,6 +140,9 @@ h1 {
     padding: 15px 20px;
     border-radius: 6px;
     box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
 }
 
 #members.grid-view img {
@@ -149,12 +152,6 @@ h1 {
 
 #members.grid-view .tag {
     border-bottom: 2px solid var(--black);
-}
-
-#members.list-view .members-details {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
 }
 
 #members.list-view .members-details:nth-child(odd) {
@@ -184,7 +181,6 @@ footer {
     background-color: var(--background-neutral);
     padding: 0.5rem;
     margin: 10px 0 0 0;
-    font-size: 1rem;
 }
 
 .social-icon {

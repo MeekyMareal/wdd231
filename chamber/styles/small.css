@@ -151,17 +151,10 @@ h1 {
     border-bottom: 2px solid var(--black);
 }
 
-
-#members.list-view {
-	display: flex;
-	flex-direction: column;
-}
-
 #members.list-view .members-details {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
-    padding: 0.25rem;
 }
 
 #members.list-view .members-details:nth-child(odd) {

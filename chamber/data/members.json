@@ -1,0 +1,92 @@
+[
+  {
+    "company": "Delwit Engineering Ltd",
+    "address": "59 Urubi Road, Benin City, Edo State, Nigeria",
+    "phone": "+234 52 250 312",
+    "website": "https://www.delwitengineering.com",
+    "image": "images/delwit.webp",
+    "level": "gold",
+    "category": "Engineering & Web Services",
+    "work_hours": "Mon-Fri: 08:30 - 17:00"
+  },
+  {
+    "company": "Carlcare Service Center Benin",
+    "address": "No. 5-7 Isekhere Street, Off Ibewe Road, Ring Road, Benin City, Edo State, Nigeria",
+    "phone": "+234 903 600 3533",
+    "website": "https://www.carlcare.com",
+    "image": "images/carlcare.webp",
+    "level": "silver",
+    "category": "Electronics Repair & Mobile Support",
+    "work_hours": "Mon-Sat: 09:00 - 17:30"
+  },
+  {
+    "company": "Berger Paints Benin Depot",
+    "address": "134 Murtala Mohammed Way, Benin City, Edo State, Nigeria",
+    "phone": "+234 810 216 4842",
+    "website": "https://www.bergerpaintsnig.com",
+    "image": "images/berger.webp",
+    "level": "silver",
+    "category": "Manufacturing & Building Supplies",
+    "work_hours": "Mon-Fri: 08:00 - 16:30"
+  },
+  {
+    "company": "Community Research & Development Centre (CREDC)",
+    "address": "266 Ugbowo-Lagos Road, Benin City, Edo State, Nigeria",
+    "phone": "+234 802 897 8877",
+    "website": "https://www.credcng.org",
+    "image": "images/credcent.webp",
+    "level": "member",
+    "category": "Non-Governmental & Renewable Energy Research",
+    "work_hours": "Mon-Fri: 08:00 - 17:00"
+  },
+  {
+    "company": "Flashlearners",
+    "address": "Off Ugbowo Lagos Road, Benin City, Edo State, Nigeria",
+    "phone": "+234 816 795 1452",
+    "website": "https://www.flashlearners.com",
+    "image": "images/flashlearners.webp",
+    "level": "gold",
+    "category": "Educational Technology & E-Learning",
+    "work_hours": "Mon-Sat: 08:00 - 18:00"
+  },
+  {
+    "company": "Gilgal Dental Clinic",
+    "address": "7 Ihama Road, G.R.A., Benin City, Edo State, Nigeria",
+    "phone": "+234 802 351 0954",
+    "website": "https://www.gilgaldental.com",
+    "image": "images/gilgal.webp",
+    "level": "silver",
+    "category": "Healthcare & Dental Care",
+    "work_hours": "Mon-Sat: 08:00 - 18:00"
+  },
+  {
+    "company": "Okomu Oil Palm PLC",
+    "address": "Okomu Sanctuary, Extension Ugbowo, Benin City, Edo State, Nigeria",
+    "phone": "+234 803 310 1234",
+    "website": "https://www.okomu.com",
+    "image": "images/okomu.webp",
+    "level": "gold",
+    "category": "Agriculture & Agro-Allied Production",
+    "work_hours": "Mon-Fri: 08:00 - 17:00"
+  },
+  {
+    "company": "Ami's Beading N' Makeovers",
+    "address": "Osagie Avenue, Beside NIPCO Station, Ugbor Road, Off Country Home Hotel Road, Benin City, Edo State, Nigeria",
+    "phone": "+234 807 839 0086",
+    "website": "https://www.amisbeadingmakeovers.ng",
+    "image": "images/ami.webp",
+    "level": "member",
+    "category": "Beauty & Fashion Services",
+    "work_hours": "Mon-Sat: 09:00 - 19:00"
+  },
+  {
+    "company": "Presco PLC",
+    "address": "Obaretin Estate, Km 22 Benin/Sapele Road, Ikpoba-Okha, Benin City, Edo State, Nigeria",
+    "phone": "+234 803 413 4444",
+    "website": "https://www.presco-plc.com",
+    "image": "images/presco.webp",
+    "level": "gold",
+    "category": "Agriculture & Agro-Allied Industrial Production",
+    "work_hours": "Mon-Fri: 08:00 - 17:00"
+  }
+]

@@ -1,0 +1,46 @@
+        review head links
+        
+        
+        <section>
+            <h1>Site Plan</h1>
+            <h2>Site Name</h2>
+            <p>Benin Chamber of Commerce</p>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The website will serve as a directory for businesses in Benin city that helps member to have quick access to other business, hosting events like price regulation, other non business owners can access this site and easily get information to a legit business owner for a particular type of product such person wants to purchase.</p>
+            <p>This will promote local business in the sense that instead of consumers ordering a particular thing from other places, they can now check with business owners to see if a particular products is available.</p>
+            <p>The site will offer events for business owners to network and for consumers to survey on products that are not available in the local markets and this will help the businesses to know what product needs to be in-stock</p>
+        <section>
+            <h2>Target Market</h2>
+            <p>Business owners and patrons in the city of Benin and some other areas</p>
+        </section>
+        <section>
+            <h2>Site Goals</h2>
+            <ul>
+                <li>Improves consumer ability to purchase a particular products locally without sourcing from vendors outside the locality and also improves business sales.</li>
+                <li>Other businesses that are yet to join the directory will then see the benefits of being listed in the directory because the site uses google analytics it will help favour the directory in the aspect that each online search for a particular type of products will likely bring up the chamber of commerce because it lists different businesses and their </li>
+                <li>Increase the visibility and because of the consumers and business owners reviews this will help increase the trusted authority in the local market of benin city./</li>
+                <li>Not  only the local consumers can buy from the business listed in the directory, other states or country can have access to this site to obtain businesses details.</li>
+            </ul>
+        </section>
+        <section> 
+            <h2>User Personas</h2>
+            <h3>Small Business Owner:</h3>
+            <p>Divine is a 25 years old entrepreneur who is looking for where to purchase goods at whole sale price for his clothing business and also to seek help from other business owners for guidance on what to do and what not to do via networking events.</p>
+            <h3></h3>
+        </section>
+
+
+
+
+
+on the json file, the file name is member.json and each keys should be named in this format
+company name = company
+company addresses = address
+company phone number = phone
+company website URL = website
+image name = image
+membership level = level
+category = category
+operating hours = work_hours

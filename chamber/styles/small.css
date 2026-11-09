@@ -24,65 +24,70 @@ body {
     margin: 0;
 }
 
-.logo {
-    display: flex;
-    place-items: center;
-}
-
-.logo svg {
-    padding-right: 5px;
-}
-
 header {
-    color: var(--text-color);
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--background-neutral);
-    padding: 1rem;
-    justify-content: space-between;
     color: var(--black);
-    font-size: larger;
-    font-weight: 700;
+
 }
 
-#menu::before {
-    content: "≡";
-    font-size: 2.5rem;
+.header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    padding: 1rem 0 1rem 10px;
+    border-bottom: 1px solid var(--black);
+    gap: 1rem;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menubtn {
+    background-color: none;
+    border: 1px solid var(--background-neutral);
     color: var(--primary-color);
+    cursor: pointer;
 }
 
-#menu.show::before {
-    content: "✕";
+.menubtn::after {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.menubtn.show::after {
+    content: "\00D7";
     font-size: 2rem;
 }
 
+.nav {
+    display: none;
+}
+
+.nav.show {
+    display: block;
+}
+
+
 header nav {
-    background-color: var(--black);
+    background-color: var(--primary-color);
     margin-top: 0;
     text-align: center;
 }
 
-.nav li {
-    display: none;
-}
-
-.show li {
-    display: block;
-}
-
 header a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 header nav ul li:hover {
     background-color: var(--card-color);
-}
-
-header nav a {
-    color:   var(--text-color);
 }
 
 ul {
@@ -91,7 +96,7 @@ ul {
 
 header nav ul li {
     padding: 0.5rem;
-}
+} 
 
 h1 {
     padding: 0.5rem;

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    background-color: bisque;
+    color: black;
+}
+
+main p {
+    text-align: center;
+    padding: 1rem;
+}
+
+main img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

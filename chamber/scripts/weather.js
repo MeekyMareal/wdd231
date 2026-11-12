@@ -38,6 +38,8 @@ function displayResults(data) {
     const desc = data.weather[0].description;
     weatherIcon.setAttribute('src', icon);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', 50);
+    weatherIcon.setAttribute('height', 50);
     
     captionDesc.textContent = desc;
 }

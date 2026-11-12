@@ -301,6 +301,10 @@ footer {
     padding: 1rem;
 }
 
+.info h3 {
+    font-size: 0.9rem;
+}
+
 .social-icon a {
     padding: 0.5rem;
     text-decoration: none;

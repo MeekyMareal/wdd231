@@ -121,11 +121,5 @@ function showSpotlights() {
 }  
 
 document.addEventListener("DOMContentLoaded", loadMembers);
-    
-
-
-
-
-
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;

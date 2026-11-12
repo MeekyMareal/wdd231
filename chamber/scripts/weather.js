@@ -111,7 +111,7 @@ function showSpotlights() {
               <div>
                 <h3>${m.company}</h3>
                 <span>Level: ${m.level}</span>
-                <p><a href="${m.website}" target="_blank">Website</a></p>
+                <p><a href="${m.website}" target="_blank">${m.company} Website</a></p>
                 <p>Address: ${m.address}</p>
               </div>
             </div>

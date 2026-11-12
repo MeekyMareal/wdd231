@@ -215,6 +215,7 @@ h1 {
 .home {
     background-color: var(--secondary-color);
     margin: 0 5px 10px 5px;
+    min-width: 15rem;
 }
 
 #spotLights {

@@ -37,6 +37,12 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
 
+    .hero img {
+        width: 100%;
+        height: 500px;
+    }
+
+
     .footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

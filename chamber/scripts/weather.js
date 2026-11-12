@@ -72,7 +72,7 @@ function displayForecast(data){
         const weekday = date.toLocaleDateString('en-US', {weekday: 'long'});
         const card = document.createElement('div');
         card.innerHTML = `
-            <p><strong>${weekday}:</strong> ${dayData.main.temp}&deg;F</p>
+            <p>${weekday}: ${dayData.main.temp}&deg;F</p>
         `;
         forecasts.appendChild(card);
     });

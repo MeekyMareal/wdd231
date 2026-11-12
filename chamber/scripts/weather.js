@@ -110,9 +110,9 @@ function showSpotlights() {
               <img src="${m.image}" width="100" height="85" alt="${m.company}" loading="lazy">
               <div>
                 <h3>${m.company}</h3>
-                <span><strong>Level:</strong> ${m.level}</span>
+                <span>Level: ${m.level}</span>
                 <p><a href="${m.website}" target="_blank">Website</a></p>
-                <p><strong>Address:</strong> ${m.address}</p>
+                <p>Address: ${m.address}</p>
               </div>
             </div>
           `

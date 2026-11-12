@@ -9,7 +9,7 @@
     <meta name="author" content="George Ekpo">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/weather.js" defer></script>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/chamber-favicon.ico">
     <meta property="og:title" content="Benin Chamber of Commerce Directory">
     <meta property="og:description"
         content="Explore member businesses, services, and categories in Benin City, Nigeria.">
@@ -44,32 +44,47 @@
     </header>
     <main>
         <section>
-current event(s) section
+            <div class="hero-container">
+                <picture class="hero">
+                    <source srcset="images/large.webp" media="(min-width: 800px)" class="hero-image">
+                    <source srcset="images/medium.webp" media="(min-width: 640px)">
+                    <img src="images/small.webp" alt="Desktop workstation featuring multiple monitors filled with syntax-highlighted code in a code editor." loading="lazy">
+                </picture>
+                <div class="hero-content">
+                    <div class="hero-btn">
+                        <a href="join.html">Join Us</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <p>The current temperature in Benin City, Nigeria is <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <div id="today"></div>
-            <div id="tomorrow"></div>
-            <div class=""></div>
-weather section
-
-the current temperature,
-the current weather description, and
-a three (3) day temperature forecast that is properly labeled.
-        </section>
-        <section>
-section containing two or three company 'spotlights'
-
-
-display two or three members
-member must be gold or silver members
-randomly load 'spotlights' each time the page is rendered
-display their company name, logo, phone, address, website, and membership level.
-
+            <h1 class="home-h1">Home</h1>
+            <div class="section-grid">
+                <article class="home">
+                    <h2>Events</h2>
+                    <p><strong>Monday 3pm:</strong> Benin Tech Fest 2.0 at Victor Uwaifo Creative Hub</p>
+                    <p><strong>Thursday 11am:</strong> Benin Arts & Books Festival</p>
+                    <p><strong>Sunday:</strong> Ten-year anniversary program for Oba Ewuare II</p>
+                </article>
+                <section class="home">
+                    <h2>Weather</h2>
+                    <div>
+                        <p class="weather">The current temperature in Benin City, Nigeria is <span id="current-temp"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption class="figcaption"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="home">
+                    <h2>Forecast</h2>
+                    <div id="today"></div>
+                    <div id="forecast"></div>
+                </section>
+            </div>
+        <section class="spotlighted">
+            <h2>Chamber Members Spotlights</h2>
+            <div id="spotLights">
+            </div>
         </section>
     </main>
     <footer>

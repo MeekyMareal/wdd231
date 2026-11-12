@@ -87,8 +87,9 @@ header a {
 }
 
 header nav ul li:hover {
-    border: 1px dashed var(--text-color);
-
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 15px 0;
+    border-right: 2px solid var(--secondary-color);
 }
 
 ul {
@@ -143,6 +144,7 @@ h1 {
     gap: 12px;
     max-width: 900px;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 #members.list-view .members-details {
@@ -181,6 +183,98 @@ h1 {
     margin: 6px 0;
     font-size: 0.9rem;
 }
+
+
+
+/* HOME PAGE BEGINS */
+.home-h1 {
+    margin: 0;
+}
+.home h2, .spotlighted h2 {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-color);
+}
+
+.spotlighted h2 {
+    margin: 0 5px;
+}
+
+.home p {
+    padding: 0.5rem;
+}
+
+.home figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.home {
+    background-color: var(--secondary-color);
+    margin: 0 5px 10px 5px;
+}
+
+#spotLights {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: smaller;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 5px 10px 5px;
+}
+
+.spotcard {
+    padding: 1rem;
+    width: 15rem;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.home:hover {
+    transform: translateY(-5px);
+}
+
+.weather {
+    text-align: center;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+}
+
+.hero-content {
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+    color: var(--background-neutral);
+    background-color: var(--secondary-color);
+    opacity: 0.85;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.hero-content a{
+    text-decoration: none;
+    
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* HOME PAGE ENDS */
 
 footer {
     color: var(--text-color);

@@ -274,6 +274,12 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+.hero-btn button{
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+
 /* HOME PAGE ENDS */
 
 footer {

@@ -46,20 +46,12 @@ function displayResults(data) {
 
 const weatherForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
-async function apiFetch() {
-  try {
-    const response = await fetch(weatherForecast);
-    if (response.ok) {
-      const data = await response.json();
-      displayForecast(data);
-    } else {
-      throw new Error(await response.text());
-    }
-  } catch (error) {
-    console.error(error);
-  }
-}
 
+async function apiFetch() {
+  const response = await fetch(weatherForecast);
+  const data = await response.json();
+  displayForecast(data);
+}
 apiFetch();
 
 
@@ -80,15 +72,11 @@ function displayForecast(data){
 
 let membersFile = [];
 
+
 async function loadMembers() {
-    try {
-        let fileFetch = await fetch('data/members.json');
-        membersFile = await fileFetch.json();
-        
-        showSpotlights();
-    } catch (error) {
-        console.error("Error loading members:", error);
-    }
+  let fileFetch = await fetch('data/members.json');
+  membersFile = await fileFetch.json();
+  showSpotlights();
 }
 
 function showSpotlights() {

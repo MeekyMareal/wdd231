@@ -16,20 +16,10 @@ const apiKey =  "9a0121366c229921fce7d4ee2c8025a1";
 const url =  `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 async function currentFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-       displayResults(data);
-
-    } else {
-      throw new Error(await response.text());
-    }
-  } catch (error) {
-    console.error(error);
-  }
+  const response = await fetch(url);
+  const data = await response.json();
+  displayResults(data);
 }
-
 currentFetch();
 
 function displayResults(data) {

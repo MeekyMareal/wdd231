@@ -36,12 +36,8 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', icon);
-    weatherIcon.setAttribute('alt', desc);
-    weatherIcon.setAttribute('width', 50);
-    weatherIcon.setAttribute('height', 50);
-    
-    captionDesc.textContent = desc;
+    weatherIcon.innerHTML = `<img src="${icon}" alt="${desc}" width="70" height="70">`;
+    captionDesc.innerHTML = `<p>${data.weather[0].description}</p>`;
 }
 
 const weatherForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
@@ -58,6 +54,7 @@ apiFetch();
 function displayForecast(data){
     const forecasts = document.querySelector('#forecast');
     forecasts.innerHTML = '';
+    // after going through the basic array method i was able to format the length of the forecast from 5 days to 3 and also how many members are displayed using the slice and include basic array method via: https://www.w3schools.com/js/js_array_reference.asp
     const threeDays = data.list.filter(format => format.dt_txt.includes('12:00:00')).slice(0, 3);
     threeDays.forEach(dayData => {
         const date = new Date(dayData.dt_txt);
@@ -80,17 +77,12 @@ async function loadMembers() {
 }
 
 function showSpotlights() {
-    const highLevel = membersFile.filter((m) => {
-        const levels = m.level;
+    const highLevel = membersFile.filter((members) => {
+        const levels = members.level;
         return levels.includes("gold") || levels.includes("silver");
     });
-
     const container = document.querySelector('#spotLights');
-
-    const randomize = highLevel
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3);
-
+    const randomize = highLevel.sort(() => 0.5 - Math.random()).slice(0, 3);
     container.innerHTML = randomize
         .map(
             (m) => `

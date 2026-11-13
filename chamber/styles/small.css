@@ -39,11 +39,6 @@ header {
     gap: 1rem;
 }
 
-/* header img {
-    display: block;
-    width: 100%;
-    height: auto;
-} */
 
 header span {
     font-size: 1rem;
@@ -263,11 +258,24 @@ h1 {
     opacity: 0.85;
     text-align: center;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
 
 .hero-content a{
     text-decoration: none;
+    color: var(--black);
     
+}
+
+.hero-content:hover {
+    background-color: var(--card-color);
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 15px 0;
+    border-right: 2px solid var(--secondary-color);
 }
 
 .section-grid {

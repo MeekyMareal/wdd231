@@ -213,6 +213,13 @@ h1 {
     min-width: 15rem;
 }
 
+#weather-icon {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
 #spotLights {
     display: flex;
     flex-direction: row;
@@ -236,8 +243,12 @@ h1 {
     transform: translateY(-5px);
 }
 
-.weather {
+.figcaption {
     text-align: center;
+}
+
+.weather {
+    text-align: justify;
 }
 
 .hero-container {

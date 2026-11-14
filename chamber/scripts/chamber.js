@@ -30,14 +30,14 @@ function displayMembers(membersCard) {
                 <div>
                     <img src="${membersDetails.image}" width="100" height="85" alt="Members Company Logo" loading="lazy">
                     <h2>${membersDetails.company}</h2>
-                    <p class="tag"><strong>Category:</strong> ${membersDetails.category}</p>
+                    <p>Category: ${membersDetails.category}</p>
                 </div>
                 <div>
-                    <p><strong>Phone:</strong> ${membersDetails.phone}</p>
-                    <p><a href="${membersDetails.website}" target="_blank">Website</a></p>
-                    <p><strong>Level:</strong> ${membersDetails.level}</p>
+                    <p>Phone: ${membersDetails.phone}</p>
+                    <p><a href="${membersDetails.website}" target="_blank">${membersDetails.company.split(" ")[0]} Website</a></p>
+                    <p>Level: ${membersDetails.level}</p>
                 </div>
-                    <p><strong>Address:</strong> ${membersDetails.address}</p>
+                    <p>Address: ${membersDetails.address}</p>
             </div>
         `;
     }

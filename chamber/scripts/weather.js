@@ -22,6 +22,8 @@ async function currentFetch() {
 }
 currentFetch();
 
+// consuming api https://byui-cse.github.io/wdd231-ww-course/week03/prepare-api-weather.html
+
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -81,7 +83,7 @@ function showSpotlights() {
               <div>
                 <h3>${m.company}</h3>
                 <p>Level: ${m.level}</p>
-                <p><a href="${m.website}" target="_blank">${m.company} Website</a></p>
+                <p>Website: <a href="${m.website}" target="_blank">Link</a></p>
                 <p>Address: ${m.address}</p>
               </div>
             </div>

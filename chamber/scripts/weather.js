@@ -4,6 +4,7 @@ const navBtn = document.querySelector('.nav')
 hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('show');
     navBtn.classList.toggle('show');
+    hamButton.setAttribute('aria-expanded', isOpen);
 });
 
 const currentTemp = document.querySelector('#current-temp');

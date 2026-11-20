@@ -390,9 +390,6 @@ form {
     }
 }
 
-input:-webkit-autofill{
-    -webkit-text-fill-color: var(--black);
-}
 
 @keyframes slideRightFade {
     0% {

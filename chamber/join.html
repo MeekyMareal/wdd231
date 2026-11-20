@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benin Chamber of Commerce Home Page</title>
+    <title>Benin Chamber of Commerce Join Page</title>
     <meta name="description"
         content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group.">
     <meta name="author" content="George Ekpo">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/join.js" defer></script>
     <link rel="icon" href="images/chamber-favicon.ico">
-    <meta property="og:title" content="Benin Chamber of Commerce Directory">
+    <meta property="og:title" content="Benin Chamber of Commerce Join Page">
     <meta property="og:description"
         content="Explore member businesses, services, and categories in Benin City, Nigeria.">
     <meta property="og:type" content="website">
@@ -46,13 +46,14 @@
         <h1>Join</h1>
         <div class="form-levels">
             <section>
-                <form method="GET" action="thanks.html" class="designOne">
-                    <h2>Membership Registration</h2>
+                <form method="GET" action="thankyou.html">
+                    <h2>Membership</h2>
+                    <h2>Registration</h2>
                     <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                     <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
                     <label>Organizational Title <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Must be at least 7 characters using only letters, spaces, and hyphens"></label>
                     <label>Email <input type="email" name="email" required placeholder="johndoe@gmail.com"  title="Your Email" autocomplete="email"></label>
-                    <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="Your Phone Number" placeholder="+2348034422323" ></label>
+                    <label>Phone <input type="tel" name="phone" required  autocomplete="tel" title="Your Phone Number" placeholder="+2348034422323" ></label>
             
 
                     <h3>Membership Level</h3>
@@ -64,8 +65,7 @@
                     </div>
 
                     <h3>Business/Organization's Description</h3>
-                    <label for="description" class="required">Describe Your Organization </label>
-                    <textarea type="textarea" name="description"  title="Description" rows="2" cols="30"></textarea>
+                    <label>Describe Your Organization <textarea type="textarea" name="description"  title="Description" rows="3" cols="37"></textarea></label>
 
 
                     <h3>Date of Registration</h3>

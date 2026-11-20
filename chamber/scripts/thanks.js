@@ -17,7 +17,7 @@ formFilled.innerHTML = `
 <p>Email: ${userInfo.get('email')}</p>
 <p>Phone: ${userInfo.get('phone')}</p>
 <p>Level: ${userInfo.get('membership')}</p>
-<p>Date of Registration: ${userInfo.get('date')}</p>
+<p>Date of Registration: ${timestamp}</p>
 <p>Has been duly received, we will get in touch with you soon.</p>
 `;
 

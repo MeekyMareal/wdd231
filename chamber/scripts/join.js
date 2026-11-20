@@ -7,6 +7,8 @@ hamButton.addEventListener('click', () => {
     hamButton.setAttribute('aria-expanded', isOpen);
 });
 
+const timestamp = document.getElementById("timestamp");
+timestamp.value = new Date().toISOString();
 
 const np = document.querySelector('#np');
 const bronze = document.querySelector('#bronze');
@@ -51,13 +53,11 @@ gold.addEventListener("click",  () => {
     goldDialog.showModal();
 });
 
-// closeModal.addEventListener("click",  () => {
-//     goldDialog.close();
-// });
-
 closeModal4.addEventListener("click",  () => {
     goldDialog.close();
 });
+
+
 
 
 

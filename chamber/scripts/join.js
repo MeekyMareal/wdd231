@@ -7,9 +7,6 @@ hamButton.addEventListener('click', () => {
     hamButton.setAttribute('aria-expanded', isOpen);
 });
 
-const timestamp = document.getElementById("timestamp");
-timestamp.value = new Date().toISOString();
-
 const np = document.querySelector('#np');
 const bronze = document.querySelector('#bronze');
 const silver = document.querySelector('#silver');

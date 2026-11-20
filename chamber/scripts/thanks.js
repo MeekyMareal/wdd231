@@ -7,7 +7,12 @@ hamButton.addEventListener('click', () => {
     hamButton.setAttribute('aria-expanded', isOpen);
 });
 
+// const timestamp = document.getElementById("timestamp");
+// timestamp.value = new Date().toISOString();
+
 const userInfo = new URLSearchParams(window.location.search);
+const timestamp  = userInfo.get('timestamp');
+const date = timestamp.value = new Date().toLocaleString();
 
 const formFilled = document.getElementById('formFilled');
 formFilled.innerHTML = `
@@ -16,8 +21,8 @@ formFilled.innerHTML = `
 <p>Organization: ${userInfo.get('title')}</p>
 <p>Email: ${userInfo.get('email')}</p>
 <p>Phone: ${userInfo.get('phone')}</p>
-<p>Level: ${userInfo.get('membership')}</p>
-<p>Date of Registration: ${timestamp}</p>
+<p>Level: ${'membership'}</p>
+<p>Date of Registration: ${date}</p>
 <p>Has been duly received, we will get in touch with you soon.</p>
 `;
 

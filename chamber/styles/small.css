@@ -484,7 +484,7 @@ dialog::backdrop {
 #formFilled {
     padding: 1rem;
     margin: 0 1rem 1rem 1rem;
-    background-color: var(--card-color);
+    background-color: var(--background-color);
     border-radius: 12px;
     border: 2px solid var(--black);
     font-weight: 700;
@@ -501,7 +501,7 @@ dialog::backdrop {
 
 .thanks-btn button {
     border: none;
-    background-color: var(--background-color);
+    background-color:var(--card-color) ;
     padding: 1rem;
     border-radius: 12px;
 }

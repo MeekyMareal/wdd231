@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-<body class="join-main">
+<body>
     <header>
         <div class="header">
             <img src="images/benin-chamber-icon.svg" alt="Benin Chamber of Commerce icon" width="24" height="24">
@@ -49,7 +49,7 @@
                     <h2>Registration</h2>
                     <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                     <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    <label>Organizational Title <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Must be at least 7 characters using only letters, spaces, and hyphens"></label>
+                    <label>Organizational Title <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z -]{7,}" title="Must be at least 7 characters using only letters, spaces, and hyphens"></label>
                     <label>Email <input type="email" name="email" required placeholder="johndoe@gmail.com"  title="Your Email" autocomplete="email"></label>
                     <label>Phone <input type="tel" name="phone" required  autocomplete="tel" title="Your Phone Number" placeholder="+2348034422323" ></label>
                     <label>Business/Organization's Name <input type="text" name="organization" required title="Your Organization Name"  autocomplete="organization"></label>

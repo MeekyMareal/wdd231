@@ -325,11 +325,15 @@ h1 {
 
 
                                         /* JOIN PAGE BEGINS */
+
+.join-main {
+    background-color: var(--secondary-color);
+}
 form {
     margin: 1rem 2%;
-    background-color: var(--secondary-color);
     padding: 1rem 1.5rem 1rem 1rem;
     border-radius: 12px;
+    background-color: var(--text-color);
     border: 2px solid var(--primary-color);
     box-shadow: var(--box-shadow);
     display: flex;
@@ -338,25 +342,28 @@ form {
   
     label {
         display: block;
-        font-size: .8rem;
-        color: var(--black);
-        padding-top: .2rem;
-    }
-    h3 {
         font-size: 0.9rem;
         color: var(--black);
-        margin: 1.5rem 0 .2rem 0;
+        padding-top: 0.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+        color: var(--black);
+        margin: 1.5rem 0 0.3rem 0;
         border-bottom: 1px solid var(--text-color);
     }
   
     input:required {
-        border-right-color: var(--background-neutral);
+        background-color: var(--secondary-color);
+        border-left-width: 6px;
     }
+
     input:focus {
-        border-left-color: var(--black);
+        background-color: var(--box-shadow);
     }
+
     input:required:valid {
-        border-left-color: var(--card-color);
+    border: 2px solid var(--black);
     }
   
     input[type=submit] {
@@ -383,12 +390,8 @@ form {
         display: block;
         margin: .1rem 0 1rem 0 ;
         padding: 0.3rem;
-        border: 1px solid var(--text-color);
         border-radius: 4px;
-        border-left-width: 6px;
-        border-left-color: var(--card-color);
         font-size: 1rem;
-        color: var(--black);
         width: 250px;
     }
 }
@@ -398,13 +401,13 @@ form {
 }
 
 .options input[type="radio"] {
-  width: 1rem;
-  height: 1rem;
-  vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
 }
 
 
-@keyframes slideRightFade {
+@keyframes slideUpFade {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -417,7 +420,7 @@ form {
 
 .membership-levels .card { 
     display: block;
-    animation: slideRightFade 0.8s ease-out forwards;
+    animation: slideUpFade 0.8s ease-out forwards;
     opacity: 0;
     min-width: 300px;
 }
@@ -447,6 +450,7 @@ dialog::backdrop {
 .membership-levels h4 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: larger;
 }
 
 .members-grid {
@@ -464,7 +468,7 @@ dialog::backdrop {
 }
 .card {
     padding: 0.5rem;
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     border-radius: 15px;
     transition:  transform 0.2s ease-in-out 0.2s;
     width: auto;
@@ -473,10 +477,7 @@ dialog::backdrop {
 
 .card h5, .card p {
     padding: 0.5rem;
-}
-
-.card:hover {
-    transform: scale(1.1);
+    font-size: 0.9rem;
 }
 
 .form-levels {

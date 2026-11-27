@@ -324,6 +324,61 @@ h1 {
 
 
 
+                                        /* DISCOVER PAGE BEGINS */
+
+.place-card {
+    border: 2px solid var(--primary-color);
+    background-color: var(--card-color);
+    margin: 0.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location"
+    "photograph category"
+    "photograph cost";
+}
+
+#place section h2 {
+    padding: 0.5rem;
+    grid-area: name;
+}
+
+#place section address {
+    padding: 0.5rem;
+    grid-area: location;
+}
+
+#place section img {
+    width: 100%;
+    height: 300PX;
+    grid-area: photograph;
+}
+
+.category {
+    grid-area: category;
+    padding: 0.5rem;
+}
+.cost {
+    grid-area: cost;
+    padding: 0.5rem;
+}
+.description {
+    grid-area: description;
+    padding: 0.5rem;
+}
+
+
+
+
+                                        
+                                        /* DISCOVER PAGE ENDS */
+
+
+
+
                                         /* JOIN PAGE BEGINS */
 
 

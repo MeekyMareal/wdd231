@@ -1,16 +1,33 @@
 @media only screen and (min-width: 38rem) {
     .place-card {
-        grid-template-areas: 
-        "photograph category"
-        "photograph cost"
-        "name"
-        "photograph description"
-        "photograph location";
-        
+        display: grid;
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+            "photograph category"
+            "photograph cost";
+            max-height: min-content;
+            max-width: max-content;
     }
-    /* #place section img {
-        width: 400px;
-        height: 300px;
-    }    */
 }
 
+@media only screen and (min-width: 64rem) {
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "photograph"
+            "category"
+            "cost"
+            "description"
+            "location";
+        max-width: 400px;
+        max-height: fit-content;
+    }
+
+    #place {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,9 +1,15 @@
 const hamButton = document.querySelector('#menu');
 const navBtn = document.querySelector('.nav')
 
+// hamButton.addEventListener('click', () => {
+//     hamButton.classList.toggle('show');
+//     navBtn.classList.toggle('show');
+//     hamButton.setAttribute('aria-expanded', isOpen);
+// });
+
 hamButton.addEventListener('click', () => {
-    hamButton.classList.toggle('show');
-    navBtn.classList.toggle('show');
+    const isOpen = navBtn.classList.toggle('show');
+    hamButton.classList.toggle('show', isOpen);
     hamButton.setAttribute('aria-expanded', isOpen);
 });
 
@@ -15,7 +21,7 @@ function displayPlaces(placesCard) {
 
     for (let i = 0; i < placesCard.length; i++) {
         const placeDetails = placesCard[i];
-        
+
         container.innerHTML += `
             <section class="place-card">
                 <h2>${placeDetails.name}</h2>
@@ -30,6 +36,27 @@ function displayPlaces(placesCard) {
 }
 
 displayPlaces(places);
+
+const visitText = document.getElementById("visit");
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
+const day = 86400000;
+
+if (lastVisit === null) {
+  visitText.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+  const days = Math.floor((now - Number(lastVisit)) / day);
+
+  if (days < 1) {
+    visitText.textContent = "Back so soon! Awesome!";
+  } else if (days === 1) {
+    visitText.textContent = "You last visited 1 day ago.";
+  } else {
+    visitText.textContent = `You last visited ${days} days ago.`;
+  }
+}
+
+localStorage.setItem("lastVisit", now);
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;

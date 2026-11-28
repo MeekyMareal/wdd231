@@ -29,7 +29,7 @@ function displayPlaces(placesCard) {
                 <p class="description">${placeDetails.description}</p>
                 <address>${placeDetails.address}</address>
                 <p class="cost"><strong>Cost:</strong> ${placeDetails.cost}</p>
-                <figure><img src="${placeDetails.image}" width="400" height="300" alt="${placeDetails.name}"></figure>
+                <figure><img src="${placeDetails.image}" width="400" height="300" alt="${placeDetails.name}" fetchpriority="high"></figure>
             </section>
         `;
     }

@@ -335,14 +335,12 @@ h1 {
 }
 
 #visit {
-    text-align: center;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem 1rem;
 }
 
 #place {
     display: grid;
     grid-template-columns: 1fr;
-    place-items: center;
 }
 
 .place-card {

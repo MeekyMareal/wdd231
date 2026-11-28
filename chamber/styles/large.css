@@ -65,3 +65,28 @@
     }
 }
 
+@media only screen and (min-width: 64rem) {
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "photograph"
+            "category"
+            "cost"
+            "description"
+            "location";
+        max-width: 400px;
+        max-height: fit-content;
+    }
+
+    #place {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #place section figure img {
+        transition: transform 0.3s ease;
+    }
+    #place section figure img:hover {
+        transform: scale(1.03);
+    }
+}

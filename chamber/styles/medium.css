@@ -10,6 +10,12 @@
             max-height: min-content;
             max-width: max-content;
     }
+    #place section figure img {
+        transition: transform 0.3s ease;
+    }
+    #place section figure img:hover {
+        transform: scale(1.03);
+    }
 }
 
 @media only screen and (min-width: 64rem) {
@@ -29,5 +35,11 @@
     #place {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    #place section figure img {
+        transition: transform 0.3s ease;
+    }
+    #place section figure img:hover {
+        transform: scale(1.03);
     }
 }

@@ -330,6 +330,9 @@ h1 {
 
 
 /* DISCOVER PAGE BEGINS */
+.main{
+    min-width: 600px;
+}
 
 #visit {
     text-align: center;

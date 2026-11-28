@@ -331,7 +331,7 @@ h1 {
 
 /* DISCOVER PAGE BEGINS */
 .main {
-    min-width: 700px;
+    min-height: 700px;
 }
 
 #visit {
